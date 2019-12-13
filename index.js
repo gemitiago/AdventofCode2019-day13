@@ -250,18 +250,18 @@ const getPrintedTile = tile => {
 
   switch (tileID) {
     case tileEnum.ball:
-      return '*';
+      return 'o';
     case tileEnum.block:
-      return '#';
+      return '▀';
     case tileEnum.paddle:
-      return '_';
+      return '▬';
     case tileEnum.wall:
-      return '.';
+      return '█';
     case tileEnum.empty:
       return ' ';
     default:
-      //score
       return 'S';
+    //score
   }
 };
 
